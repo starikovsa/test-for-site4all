@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <div class="container">
       <div class="header-top">
+      <div class="container">
       <a class="header__logo logo"><img class="header__logo-img" src="img/logo.png" width="136" height="63" alt="Грузотакси НонСтоп"></a>
       <ul class="header__menu-top">
         <li class="menu-top-item"><a class="menu-top-link" href="#">О компании</a></li>
@@ -24,9 +24,11 @@
           <p class="header__title">Круглосуточно</p>
           <p class="header__phones_phone"><a class="phone-link" href="tel:73452500000">+7 (3452) 50-00-00</a></p>
       </div>
-      <a class="header__call btn btn--orange" href="#">Заказ звонка</a>
+      <a class="header__call btn" href="#">Заказ звонка</a>
+      </div>
       </div>
       <div class="header-bottom">
+          <div class="container">
         <nav class="bottom-menu">
           <ul class="header__menu-bottom">
             <li class="menu-bottom-item"><a class="menu-bottom-link" href="#">Услуги физическим лицам</a></li>
@@ -43,8 +45,8 @@
       <div class="container">
         <div class="breadcrumbs-wrapper">
           <ul class="content__breadcrumbs-list">
-            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Главная</a></li>
-            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Страница 1</a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-home" href="#">Главная</a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-first" href="#">Страница 1</a></li>
             <li class="breadcrumbs-item breadcrumbs-current">Страница 2</li>
           </ul>
         </div>
@@ -61,17 +63,19 @@
             <img class="content__video-img" src="img/video.jpg" width="1140" height="510" alt="Видеоролик компании">
         </section>
         <section class="content__instruction">
-          <ol class="content__instruction-list">
-            <li class="content__instruction-item">Скачайте анкету</li>
-            <li class="content__instruction-item">Заполните ее</li>
-            <li class="content__instruction-item">Отправьте заполненную анкету по адресу job@taxinonstop.ru, приложите копии документов:
-              <p class="instruction-item_attachment">Главная страница паспорта
-                  Страница паспорта с пропиской
-                  Водительское удостоверение
-                  Свидетельство о регистрации ТС
-                  Страховой полис ОСАГО (КАСКО)</p>
-            </li>
-            </ol>
+          <h2 class="content__instruction-title">Как стать частью нашей команды?</h2>
+          <div class="instruction-wrapper">
+          <ul class="content__instruction-list">
+              <span class="instruction-item-number">1</span><li class="content__instruction-item instruction-item-download">Скачайте анкету</li>
+              <span class="instruction-item-number">2</span><li class="content__instruction-item instruction-item-fill">Заполните ее</li>
+              <span class="instruction-item-number">3</span><li class="content__instruction-item instruction-item-profile">Отправьте заполненную анкету по адресу job@taxinonstop.ru, приложите копии документов:</li>
+          </ul>
+          <p class="instruction-item_attachment">Главная страница паспорта
+              Страница паспорта с пропиской
+              Водительское удостоверение
+              Свидетельство о регистрации ТС
+              Страховой полис ОСАГО (КАСКО)</p>
+          </div>
         </section>
         <section class="content__jobs">
           <h2 class="content__jobs-title">Открытые вакансии</h2>
@@ -100,6 +104,7 @@
                   <li class="conditions-item">Ежедневная выплата заработной платы</li>
                 </ul>
               </div>
+              <a class="jobs__btn-resume btn" href="#">Заполнить анкету</a>
             </div>
             <div class="jobs-description_right">
               <address class="jobs-contact">
@@ -134,6 +139,7 @@
                     <li class="conditions-item">Ежедневная выплата заработной платы</li>
                   </ul>
                 </div>
+                <a class="jobs__btn-resume btn" href="#">Заполнить анкету</a>
               </div>
               <div class="jobs-description_right">
                 <address class="jobs-contact">
@@ -223,7 +229,7 @@
                   <li class="menu__item"><a class="menu__link" href="#">Спецтехника</a></li>
                 </ul>
             </div>
-            <div class="menu__third menu__wrapper">                
+            <div class="menu__third menu__wrapper">
                 <ul class="menu__list">
                   <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
                   <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
